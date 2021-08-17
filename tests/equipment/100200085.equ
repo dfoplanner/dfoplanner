@@ -1,0 +1,81 @@
+#PVF_File
+[name]
+`<3::name_100200085>`
+
+[grade]
+73
+[rarity]
+5
+[part set index]
+80
+[usable job]
+`[all]`
+
+[/usable job]
+
+[attach type]
+`[trade]`
+
+[minimum level]
+50
+[magical attack]
+21
+[add magical attack]
+13
+[magical defense]
+21
+[add magical defense]
+9
+[stuck resistance]
+10
+[HP MAX]
+32
+[MP MAX]
+112
+[MP regen speed]
+2
+[hit recovery]
+2
+[inventory limit]
+3000
+[price]
+29200
+[add price]
+-29200
+[repair price]
+23360
+[add repair price]
+-1991
+[value]
+23360
+[add value]
+-21240
+[equipment physical defense]
+308	296
+[icon]
+`Item/common/belt.img`
+212
+[field image]
+`Item/field_equip.img`
+3
+[equipment type]
+`[waist]`
+14
+[sub type]
+0
+[move wav]
+`CLOTH_TOUCH`
+
+[durability]
+18
+[weight]
+550
+[item group name]
+`cl waist`
+
+[cool time]
+10000
+[anti evil]
+180
+[add anti evil]
+48
