@@ -200,16 +200,6 @@ func (s *NpconfContext) ExitRule(listener antlr.ParseTreeListener) {
 	}
 }
 
-func (s *NpconfContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitNpconf(s)
-
-	default:
-		return t.VisitChildren(s)
-	}
-}
-
 
 
 
@@ -401,16 +391,6 @@ func (s *SectionContext) ExitRule(listener antlr.ParseTreeListener) {
 	}
 }
 
-func (s *SectionContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitSection(s)
-
-	default:
-		return t.VisitChildren(s)
-	}
-}
-
 
 
 
@@ -570,16 +550,6 @@ func (s *SectionheaderContext) ExitRule(listener antlr.ParseTreeListener) {
 	}
 }
 
-func (s *SectionheaderContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitSectionheader(s)
-
-	default:
-		return t.VisitChildren(s)
-	}
-}
-
 
 
 
@@ -700,16 +670,6 @@ func (s *SectionfooterContext) ExitRule(listener antlr.ParseTreeListener) {
 	}
 }
 
-func (s *SectionfooterContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitSectionfooter(s)
-
-	default:
-		return t.VisitChildren(s)
-	}
-}
-
 
 
 
@@ -821,16 +781,6 @@ func (s *StrContext) EnterRule(listener antlr.ParseTreeListener) {
 func (s *StrContext) ExitRule(listener antlr.ParseTreeListener) {
 	if listenerT, ok := listener.(npconfListener); ok {
 		listenerT.ExitStr(s)
-	}
-}
-
-func (s *StrContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitStr(s)
-
-	default:
-		return t.VisitChildren(s)
 	}
 }
 
@@ -948,16 +898,6 @@ func (s *LineContext) EnterRule(listener antlr.ParseTreeListener) {
 func (s *LineContext) ExitRule(listener antlr.ParseTreeListener) {
 	if listenerT, ok := listener.(npconfListener); ok {
 		listenerT.ExitLine(s)
-	}
-}
-
-func (s *LineContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitLine(s)
-
-	default:
-		return t.VisitChildren(s)
 	}
 }
 
@@ -1079,16 +1019,6 @@ func (s *StringlistContext) EnterRule(listener antlr.ParseTreeListener) {
 func (s *StringlistContext) ExitRule(listener antlr.ParseTreeListener) {
 	if listenerT, ok := listener.(npconfListener); ok {
 		listenerT.ExitStringlist(s)
-	}
-}
-
-func (s *StringlistContext) Accept(visitor antlr.ParseTreeVisitor) interface{} {
-	switch t := visitor.(type) {
-	case npconfVisitor:
-		return t.VisitStringlist(s)
-
-	default:
-		return t.VisitChildren(s)
 	}
 }
 
