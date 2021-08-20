@@ -8,4 +8,7 @@ require (
 	gopkg.in/ini.v1 v1.62.0
 )
 
-require github.com/smartystreets/goconvey v1.6.4 // indirect
+require (
+	github.com/antlr/antlr4/runtime/Go/antlr v0.0.0-20210803070921-b358b509191a // indirect
+	github.com/smartystreets/goconvey v1.6.4 // indirect
+)

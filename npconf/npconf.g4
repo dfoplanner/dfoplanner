@@ -10,14 +10,14 @@ section
    ;
 
 sectionheader
-   : '[' string ']' EOL
+   : '[' str ']' EOL
    ;
 
 sectionfooter
-   : '[/' string ']' EOL
+   : '[/' str ']' EOL
    ;
 
-string
+str
    : CHARS
    | STRING
    ;
@@ -27,7 +27,7 @@ line
    ;
 
 stringlist
-   : string (',' string?)*
+   : str (',' str?)*
    ;
 
 
@@ -37,7 +37,7 @@ CHARS
 
 
 STRING
-   : '`' (~ ('"' | '\n'))* '`'
+   : '"' (~ ('"' | '\n'))* '"'
    ;
 
 
